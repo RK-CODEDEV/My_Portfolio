@@ -727,7 +727,7 @@ export default function RKPortfolio() {
                   <img src="your-photo.jpg" alt="Ranjith Kumar" className="rk-photo-img" />
                 */}
                 <img
-                  src="/public/ranjith.jpeg"
+                  src="/ranjith.jpeg"
                   alt="Ranjith Kumar"
                   className="rk-photo-img"
                 />
@@ -753,7 +753,7 @@ export default function RKPortfolio() {
               <div className="rk-agrid" style={{ display: "grid", gridTemplateColumns: "260px 1fr", gap: 56, alignItems: "center" }}>
                 <div style={{ position: "relative" }}>
                   <div className="rk-aframe" style={{ position: "relative", width: 260, aspectRatio: "3/4" }}>
-                   <img src="/public/my.png" alt="Ranjith Kumar" style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 2 }} />
+                   <img src="/my.png" alt="Ranjith Kumar" style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 2 }} />
                   </div>
                 </div>
                 <div>
