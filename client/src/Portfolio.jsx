@@ -1,20 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import aiCert from './assets/certs/ai.png';
-import ai2Cert from './assets/certs/AI2.png';
-import c1Cert from './assets/certs/C1.png';
-import canvaCert from './assets/certs/canva.png';
-import certCert from './assets/certs/certificate.jpg';
-import cssCert from './assets/certs/css.png';
-import cyberCert from './assets/certs/cyber_security.png';
-import deepCert from './assets/certs/DEEP_LEARNING.png';
-import digilabCert from './assets/certs/digilab.jpg';
-import fedCert from './assets/certs/FED.png';
-import htmlCert from './assets/certs/HTML.png';
-import javaCert from './assets/certs/JAVA.png';
-import nlpCert from './assets/certs/NLP.png';
-import pythonCert from './assets/certs/PYTHON.png';
-import sqlCert from './assets/certs/SQL.png';
-import timeCert from './assets/certs/TIME MANAGEMENT.png';
 
 // ── DATA ──────────────────────────────────────────────────────────────────────
 const SKILLS = [
@@ -117,22 +101,22 @@ const EXP = [
 ];
 
 const CERTS = [
-{ n: "AI Foundation Certification",           iss: "Infosys Springboard",   dt: "Jul 31, 2024",  img: aiCert },
-  { n: "Introduction to Artificial Intelligence", iss: "Infosys Springboard", dt: "Jul 22, 2024",  img: ai2Cert },
-  { n: "Tech Talk on C# .Net",                  iss: "IBM SkillsBuild",       dt: "May 03, 2024",  img: c1Cert },
-  { n: "Canva Blueprint",                       iss: "Pantech Solutions",     dt: "Aug 26, 2024",  img: canvaCert },
-  { n: "Data Analyst Masterclass",              iss: "Coding Invaders",       dt: "May 18, 2023",  img: certCert },
-  { n: "CSS Tutorial",                          iss: "Great Learning",        dt: "Sep 2023",      img: cssCert },
-  { n: "Cybersecurity Workshop",                iss: "NoviTech R&D",          dt: "Aug 31, 2023",  img: cyberCert },
-  { n: "Introduction to Deep Learning",         iss: "Infosys Springboard",   dt: "Jul 23, 2024",  img: deepCert },
-  { n: "Python Basic",                          iss: "Digilabs",              dt: "May 24, 2024",  img: digilabCert },
-  { n: "Front End Development - HTML",          iss: "Great Learning",        dt: "Oct 2023",      img: fedCert },
-  { n: "HTML Tutorial",                         iss: "Great Learning",        dt: "Sep 2023",      img: htmlCert },
-  { n: "Programming in Java",                   iss: "NPTEL / IIT Kharagpur", dt: "Jul–Oct 2024",  img: javaCert },
-  { n: "Introduction to NLP",                   iss: "Infosys Springboard",   dt: "Jul 24, 2024",  img: nlpCert },
-  { n: "Basics of Python",                      iss: "Infosys Springboard",   dt: "Dec 02, 2023",  img: pythonCert },
-  { n: "Tech Talk on SQL",                      iss: "IBM SkillsBuild",       dt: "May 24, 2024",  img: sqlCert },
-  { n: "Time Management",                       iss: "Infosys Springboard",   dt: "Jul 16, 2024",  img: timeCert },
+  { n: "AI Foundation Certification",         iss: "Infosys Springboard",  dt: "Jul 31, 2024",  img: "/ai.png" },
+  { n: "Introduction to Artificial Intelligence", iss: "Infosys Springboard", dt: "Jul 22, 2024", img: "/AI2.png" },
+  { n: "Tech Talk on C# .Net",                iss: "IBM SkillsBuild",      dt: "May 03, 2024",  img: "/C1.png" },
+  { n: "Canva Blueprint",                     iss: "Pantech Solutions",    dt: "Aug 26, 2024",  img: "/canva.png" },
+  { n: "Data Analyst Masterclass",            iss: "Coding Invaders",      dt: "May 18, 2023",  img: "/certificate.jpg" },
+  { n: "CSS Tutorial",                        iss: "Great Learning",       dt: "Sep 2023",      img: "/css.png" },
+  { n: "Cybersecurity Workshop",              iss: "NoviTech R&D",         dt: "Aug 31, 2023",  img: "/cyber_security.png" },
+  { n: "Introduction to Deep Learning",       iss: "Infosys Springboard",  dt: "Jul 23, 2024",  img: "/DEEP_LEARNING.png" },
+  { n: "Python Basic",                        iss: "Digilabs",             dt: "May 24, 2024",  img: "/digilab.jpg" },
+  { n: "Front End Development - HTML",        iss: "Great Learning",       dt: "Oct 2023",      img: "/FED.png" },
+  { n: "HTML Tutorial",                       iss: "Great Learning",       dt: "Sep 2023",      img: "/HTML.png" },
+  { n: "Programming in Java",                 iss: "NPTEL / IIT Kharagpur",dt: "Jul–Oct 2024",  img: "/JAVA.png" },
+  { n: "Introduction to NLP",                 iss: "Infosys Springboard",  dt: "Jul 24, 2024",  img: "/NLP.png" },
+  { n: "Basics of Python",                    iss: "Infosys Springboard",  dt: "Dec 02, 2023",  img: "/PYTHON.png" },
+  { n: "Tech Talk on SQL",                    iss: "IBM SkillsBuild",      dt: "May 24, 2024",  img: "/SQL.png" },
+  { n: "Time Management",                     iss: "Infosys Springboard",  dt: "Jul 16, 2024",  img: "/TIME MANAGEMENT.png" },
 ];
 
 // ── PARTICLE CANVAS ───────────────────────────────────────────────────────────
