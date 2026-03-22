@@ -341,7 +341,7 @@ const send = async () => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) { alert("Please enter a valid email address."); return; }
   try {
-    const res = await fetch('http://localhost:5000/api/contact', {
+    const res = await fetch('https://profound-compassion.up.railway.app/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, message: msg }),
